@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom rounded class for consistency */
+        .card-rounded {
+            border-radius: 0.75rem; /* Equivalent to Tailwind's rounded-xl */
+        }
+        /* Basic hover effect for cards */
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 py-12">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-10">Our Latest Products</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+            <div class="product-card bg-white card-rounded shadow-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <img src="https://placehold.co/600x400/E0F2F7/2C3E50?text=Product+Image+1" alt="Product Image 1" class="w-full h-48 object-cover rounded-t-xl">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Stylish Gadget Pro</h3>
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                        A sleek and powerful gadget designed for modern life. Experience unparalleled performance and elegant design.
+                    </p>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-indigo-600">$299.99</span>
+                        <span class="text-yellow-500 text-lg">★★★★☆</span>
+                    </div>
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card bg-white card-rounded shadow-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <img src="https://placehold.co/600x400/F0F4C3/607D8B?text=Product+Image+2" alt="Product Image 2" class="w-full h-48 object-cover rounded-t-xl">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Ergonomic Keyboard</h3>
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                        Boost your productivity with this comfortable and responsive ergonomic keyboard. Perfect for long hours.
+                    </p>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-indigo-600">$89.50</span>
+                        <span class="text-yellow-500 text-lg">★★★★★</span>
+                    </div>
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card bg-white card-rounded shadow-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <img src="https://placehold.co/600x400/FFEBEE/B71C1C?text=Product+Image+3" alt="Product Image 3" class="w-full h-48 object-cover rounded-t-xl">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Noise-Cancelling Headphones</h3>
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                        Immerse yourself in pure sound with these premium noise-cancelling headphones. Crystal clear audio.
+                    </p>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-indigo-600">$149.00</span>
+                        <span class="text-yellow-500 text-lg">★★★★☆</span>
+                    </div>
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card bg-white card-rounded shadow-lg overflow-hidden transition-all duration-300 ease-in-out">
+                <img src="https://placehold.co/600x400/E8F5E9/1B5E20?text=Product+Image+4" alt="Product Image 4" class="w-full h-48 object-cover rounded-t-xl">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Smart Home Hub</h3>
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                        Control your entire smart home ecosystem with this intuitive and powerful hub. Simplify your life.
+                    </p>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-indigo-600">$120.00</span>
+                        <span class="text-yellow-500 text-lg">★★★★★</span>
+                    </div>
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
